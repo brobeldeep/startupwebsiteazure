@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedAnnotate - Build High-Quality Medical Datasets</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <header class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-xl font-bold">MedAnnotate</h1>
+            <nav>
+                <button class="md:hidden text-white focus:outline-none" id="menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+                <ul id="menu" class="hidden md:flex space-x-6">
+                    <li><a href="#features" class="hover:underline">Features</a></li>
+                    <li><a href="index.html" class="hover:underline">Contact</a></li>
+                    <li><a href="form.html" class="bg-white text-blue-600 px-4 py-2 rounded hover:bg-gray-200">Get Started</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="min-h-screen bg-cover bg-center text-white flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1516069677018-378515003435?q=80&w=1858&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        <section class="text-center px-6">
+            <h2 class="text-4xl font-bold mb-4">Build High-Quality Medical Datasets</h2>
+            <p class="text-lg mb-6">Accelerate medical AI development with MedAnnotate’s intelligent, annotator-first software for labeling and reviewing medical images.</p>
+            <a href="form.html" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Get Started</a>
+        </section>
+    </main>
+
+    <section id="features" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h3 class="text-2xl font-bold text-center mb-10">Optimize Your Data Preparation Pipeline</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded shadow">
+                    <h4 class="text-xl font-bold mb-2">Handcrafted for Medical Imaging</h4>
+                    <p class="text-gray-600">Seamless navigation and pixel-perfect labeling with tools designed to handle complex medical datasets like X-rays, CT scans, and MRIs.</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow">
+                    <h4 class="text-xl font-bold mb-2">Performance Tracking</h4>
+                    <p class="text-gray-600">Monitor skill levels, track progress, and incentivize your labeling team based on performance benchmarks for top-quality results.</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow">
+                    <h4 class="text-xl font-bold mb-2">Automated Quality Control</h4>
+                    <p class="text-gray-600">Set up error-checking protocols and consensus mechanisms to ease reviews and minimize errors, so your team can focus on building world-class models, not rework.</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow">
+                    <h4 class="text-xl font-bold mb-2">Collaborative Interface</h4>
+                    <p class="text-gray-600">Enjoy a clean interface with intuitive workflow management and smooth collaboration between annotators and reviewers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="text-center py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-2xl font-bold mb-4">Ready to Build Better Medical Datasets?</h3>
+            <p class="mb-6">Take the first step towards accurate medical data.</p>
+            <a href="form.html" class="bg-white text-blue-600 px-6 py-3 rounded hover:bg-gray-200">Get in Touch</a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p class="text-sm">&copy; MedAnnotate 2024</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
